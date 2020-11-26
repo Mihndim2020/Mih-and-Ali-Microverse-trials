@@ -47,7 +47,7 @@ input {
 	flex-direction: column;
 }
 
-#checboxes {
+#checkboxes {
 	text-align: left;
 	display: flex;
 	flex-direction: column;
