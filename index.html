@@ -20,45 +20,61 @@
         <section>
             <form action="" id="survey-form">
                 <!-- Name -->
-                <label for="name" id='name-label'> Name: </label>
-                <input type="text" id="name" required placeholder="Enter your name">
+                <label class='identity' for="name" id='name-label'> Name: </label>
+                <input class='identity-input' type="text" id="name" required placeholder="Enter your name">
                 <!-- Email -->
-                <label for="email" id='email-label'> Email: </label>
-                <input type="email" id="email" required placeholder="Enter your email">
+                <label class='identity' for="email" id='email-label'> Email: </label>
+                <input class='identity-input' type="email" id="email" required placeholder="Enter your email">
                 <!-- Number -->
-                <label for="number" id='number-label'>Age:</label>
-                <input type="number" id="number" min="10" max="89" placeholder="Enter your age">
+                <label class='identity' for="number" id='number-label'>Age:</label>
+                <input class='identity-input' type="number" id="number" min="10" max="89" placeholder="Enter your age">
                 <label for="dropdown"> Would your recommend Microverse to your friend? </label>
                 <!-- Dropdown -->
-                <select name="" id="dropdown">
+                <select class='identity' name="" id="dropdown">
                     <option value="definitely">Definitely</option>
                     <option value="maybe">May be</option>
                     <option value="may-be-not">May be not</option>
                     <option value="definitely-not">Definitely not</option>
                 </select>
                 <!-- Radio -->
-                <p>Who are you ?</p>
-                <input type="radio" name="status" id="student" value="student">
-                <label for="student">Student</label>
-                <input type="radio" name="status" id="mentor" value="mentor">
-                <label for="student">Mentor</label>
-                <input type="radio" name="status" id="recruiter" value="recruiter">
-                <label for="student">Recruiter</label>
+                <section id='radio'>
+                    <p>Who are you ?</p>
+                    <div>
+                        <input class='radio' type="radio" name="status" id="student" value="student">
+                        <label for="student">Student</label>
+                    </div>
+                    <div>
+                        <input class='radio' type="radio" name="status" id="student" value="student">
+                        <label for="student">Student</label>
+                    </div>
+                    <div>
+                        <input class='radio' type="radio" name="status" id="recruiter" value="recruiter">
+                        <label for="student">Recruiter</label>
+                    </div>
+                </section>
                 <!-- Checkbox -->
+                <section id='checkboxes'>
+                    <div>
+                        <input type="checkbox" id='Pair-Programming' value='Pair-Programming'>
+                        <label for="Pair-Programming">Pair-Programming</label>
+                    </div>
+                    <div><input type="checkbox" id='Mentorship' value='Mentorship'>
+                        <label for="Mentorship">Mentorship</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id='Project-based' value='Project-based'>
+                        <label for="Project-based">Project based</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id='Remote' value='Remote'>
+                        <label for="Remote">Remote</label>
+                    </div>
+                </section>
                 <p>Favourite features on Microverse Platform</p>
-                <input type="checkbox" id='Pair-Programming' value='Pair-Programming'>
-                <label for="Pair-Programming"></label>
-                <input type="checkbox" id='Mentorship' value='Mentorship'>
-                <label for="Mentorship"></label>
-                <input type="checkbox" id='Project-based' value='Project-based'>
-                <label for="Project-based"></label>
-                <input type="checkbox" id='Remote' value='Remote'>
-                <label for="Remote"></label>
                 <!-- Textarea -->
-                <label for="comment">Any suggestions</label>
+                <label for="comment">Any class='radio' suggestions</label>
                 <textarea name="Comments" id="comment" cols="30" rows="10"></textarea>
                 <input type="submit" id="submit">
-
             </form>
         </section>
     </main>
