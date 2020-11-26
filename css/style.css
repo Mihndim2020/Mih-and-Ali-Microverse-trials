@@ -53,3 +53,25 @@ input {
 	flex-direction: column;
 	justify-content: start;
 }
+textarea {
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+#textarea-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+}
+
+input[type='submit'] {
+	background-color: #ffd540;
+	width: 20%;
+	align-self: center;
+	height: 40px;
+	font-size: xx-large;
+	text-align: center;
+	border-radius: 5px;
+	padding-bottom: 5px;
+	margin: 10px;
+}
